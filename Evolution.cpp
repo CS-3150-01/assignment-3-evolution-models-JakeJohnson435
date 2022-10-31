@@ -1,7 +1,12 @@
 #include <iostream>
 using namespace std;
 
+    /* TODO: Create a time array, not sure where to put it that will work with World::time and Creature::timeActive */
+
 class Creature{
+    /* TODO: timeActive is an int value that will be an index for the time array created above */
+    /* TODO: creatureType might be edited to be the same as the timeActive section */
+
     public:
         string name;
         int timeActive;
@@ -19,7 +24,7 @@ class World{
     public:
         int time;
         int weather;
-
+        /* TODO: Does this actually need to be linked with Creature to spawn/kill? */
         void killCreature();
         void spawnCreature();
     
